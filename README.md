@@ -1,1 +1,1 @@
-# start_stop_timer
+An start-stop timer made using OrCAD PCB Editor
