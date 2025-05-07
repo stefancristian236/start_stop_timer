@@ -1,0 +1,94 @@
+Wire List
+
+<<< Component List >>>
+100n                          C1        capck06
+100u                          C2        cap196
+DIODE                         D1        do41
+LED                           D2        do41
+CON2                          J3        jumper2
+CON2                          J4        jumper2
+1K                            R1        res400
+10K                           R2        res400
+4.7K                          R3        res400
+4K                            R4        res400
+10K                           R5        res400
+4.7K                          R6        res400
+1K                            R7        res400
+2.2M                          RV1       pot
+STOP                          SW1       jumper2
+START                         SW2       jumper2
+BC547                         T1        to92
+LM555                         U1        DIP8_3
+
+<<< Wire List >>>
+
+  NODE  REFERENCE    PIN #   PIN NAME           PIN TYPE       PART VALUE
+
+[00001] GND
+        U1              1       GND             Power          LM555
+
+[00002] GND_POWER
+        C1              2       2               Passive        100n
+        R2              2       2               Passive        10K
+        T1              1       EMITTER         Passive        BC547
+        C2              2       2               Passive        100u
+        J3              2       2               Passive        CON2
+        SW1             1       1               Passive        STOP
+        SW2             1       1               Passive        START
+
+[00003] N00048
+        R6              1       1               Passive        4.7K
+        R4              1       1               Passive        4K
+        C1              1       1               Passive        100n
+        R3              1       1               Passive        4.7K
+        U1              8       VCC             Power          LM555
+        D1              2       K               Passive        DIODE
+        R7              1       1               Passive        1K
+        J3              1       1               Passive        CON2
+        J4              1       1               Passive        CON2
+        RV1             1       A               Passive        2.2M
+        RV1             2       WIPER           Passive        2.2M
+
+[00004] N00059
+        R6              2       2               Passive        4.7K
+        U1              4       RST             Input          LM555
+        SW1             2       2               Passive        STOP
+
+[00005] N00068
+        R4              2       2               Passive        4K
+        U1              2       TRG             Input          LM555
+        SW2             2       2               Passive        START
+
+[00006] N00151
+        R1              1       1               Passive        1K
+        RV1             3       B               Passive        2.2M
+
+[00007] N008870
+        U1              3       OUT             Output         LM555
+        R5              1       1               Passive        10K
+
+[00008] N01050
+        R3              2       2               Passive        4.7K
+        U1              5       CV              Input          LM555
+        R2              1       1               Passive        10K
+
+[00009] N011001
+        R5              2       2               Passive        10K
+        T1              2       BASE            Input          BC547
+
+[00010] N01143
+        T1              3       COLLECTOR       Passive        BC547
+        D1              1       A               Passive        DIODE
+        D2              2       CATHODE         Passive        LED
+        J4              2       2               Passive        CON2
+
+[00011] N01475
+        D2              1       ANODE           Passive        LED
+        R7              2       2               Passive        1K
+
+[00012] N01626
+        R1              2       2               Passive        1K
+        U1              6       THR             Input          LM555
+        U1              7       DSCHG           Passive        LM555
+        C2              1       1               Passive        100u
+

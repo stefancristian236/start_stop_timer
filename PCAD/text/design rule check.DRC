@@ -1,0 +1,10 @@
+--------------------------------------------------
+Checking Schematic: SCHEMATIC1
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+WARNING(ORCAP-1600): Net has fewer than two connections GND 
+                    SCHEMATIC1, PAGE1  (4.30, 3.30) 
+
+Checking For Unconnected Bus Nets
